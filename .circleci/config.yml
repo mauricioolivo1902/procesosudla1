@@ -11,6 +11,6 @@ jobs:
           command: "echo Hello, World!"
 
 workflows:
-  say-hello-workflow:
+  procesosudla-workflow:
     jobs:
       - procesosudla
