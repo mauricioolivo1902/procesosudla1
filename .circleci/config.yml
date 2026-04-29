@@ -1,0 +1,16 @@
+version: 2.1
+
+jobs:
+  procesosudla:
+    docker:
+      - image: cimg/base:current
+    steps:
+      - checkout
+      - run:
+          name: "Say hello"
+          command: "echo Hello, World!"
+
+workflows:
+  procesosudla-workflow:
+    jobs:
+      - procesosudla
